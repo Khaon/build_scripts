@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # The root folder of your AOSP
 android_root_path=/home/khaon/android/rom/aosp_master;
@@ -6,12 +6,16 @@ android_root_path=/home/khaon/android/rom/aosp_master;
 # Write here the personnal projects
 project_list="frameworks/base build system/core packages/apps/Settings external/e2fsprogs";
 
-# Remote and branch names
-remote_name="aosp";
-branch_name="master";
+# AOSP remote and branch names
+asop_remote_name="aosp";
+aosp_branch_name="master";
+
+# GITHUB remote and branch names
+github_remote_name="github";
+github_remote_branch_name="master";
 
 # The git command to be executed
-git_command="git fetch --all; git merge $remote_name/$branch_name --no-edit && git pp;"
+git_command="git fetch --all; git merge $asop_remote_name/$aosp_branch_name --no-edit && git push $github_remote_name HEAD:$github_remote_branch_name;"
 
 # Color parameters
 bold=$(tput bold);
