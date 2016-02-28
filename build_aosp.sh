@@ -3,7 +3,7 @@
 # The root folder of your AOSP
 android_root_path=/home/khaon/android/rom/aosp_master;
 android_out_folder=~/out/aosp_master;
-device_lunch_number=23;
+device_lunch_number=25;
 
 # Clean first the out folder
 rm -rf $android_out_folder;
