@@ -1,11 +1,13 @@
 #!/bin/bash
 
+# Root of the build script folder
 build_scripts_dir=/home/khaon/android/rom/build_scripts;
 
-# The root folder of your AOSP
+# The root and out folder of your AOSP
 android_root_path=/home/khaon/android/rom/aosp_master;
 android_out_folder=~/out/aosp_master;
-device_lunch_number=25;
+# Your device lunch combo
+device_lunch_number=23;
 
 # Clean first the out folder
 rm -rf $android_out_folder;
